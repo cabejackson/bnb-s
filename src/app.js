@@ -24,13 +24,13 @@ app.use(helmet());
 app.use(cors());
 
 
-app.use("api/prompts", promptsRouter);
-app.use("api/users", usersRouter);
-app.use("api/login", loginRouter);
-app.use('api/auth', authRouter);
+app.use("/api/prompts", promptsRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/login", loginRouter);
+app.use('/api/auth', authRouter);
 // app.use('/api/auth', authRouter)
 
-app.use("api/goals", goalsRouter); // requireAuth,
+app.use("/api/goals", goalsRouter); // requireAuth,
 
 // app.use("/api/saved-games", savedGamesRouter);
 
